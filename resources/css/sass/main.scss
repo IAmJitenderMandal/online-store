@@ -1,9 +1,5 @@
-$colorRed: red;
-
-body {
-    background: $colorRed;
-
-    h1 {
-        color: grey;
-    }
-}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import 'variable.scss';
+@import 'reset.scss';
+@import 'header.scss';
+@import 'main-content.scss';

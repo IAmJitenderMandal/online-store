@@ -1,8 +1,323 @@
-body {
-  background: red;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Open Sans", sans-serif;
+  vertical-align: baseline;
 }
 
-body h1 {
-  color: grey;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  position: relative;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  background-image: url("../../images/runner-bg.jpg");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.header .logo-nav-icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 10fr 3fr;
+      grid-template-columns: 2fr 10fr 3fr;
+  -ms-grid-rows: minmax(3.5rem, auto);
+      grid-template-rows: minmax(3.5rem, auto);
+  background: #000000cc;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .logo-nav-icons .logo {
+  color: #ecf0f1;
+  text-align: center;
+}
+
+.header .logo-nav-icons nav ul li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.header .logo-nav-icons nav ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header .logo-nav-icons .icons {
+  text-align: center;
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .logo-nav-icons .icons li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.header .logo-nav-icons .icons li i {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.header .main-heading {
+  position: absolute;
+  top: 50%;
+  left: 37%;
+  -webkit-transform: translate(-70%, -30%);
+          transform: translate(-70%, -30%);
+  text-align: center;
+}
+
+.header .main-heading .heading-primary {
+  font-size: 7rem;
+  color: #fff;
+  line-height: 6rem;
+}
+
+.header .main-heading .heading-secondary {
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  background-color: #9acd32;
+}
+
+.header .main-heading .button-primary {
+  background-color: #9acd32;
+  border: none;
+  width: 8rem;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.main-content {
+  width: 1000px;
+  max-width: 1000px;
+  background-color: #e6e6ff;
+  margin: 0 auto;
+}
+
+.main-content .service-details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 5fr 5fr 5fr;
+      grid-template-columns: 5fr 5fr 5fr 5fr;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+.main-content .service-details .box {
+  text-align: center;
+  background-color: #fff;
+  padding: 2.5rem 2rem;
+}
+
+.main-content .service-details .box .box-icon {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 2rem;
+  color: #34495e;
+}
+
+.main-content .service-details .box .box-heading {
+  font-size: 1.2rem;
+  margin: 2rem 2rem;
+  color: #34495e;
+}
+
+.main-content .service-details .box p {
+  font-weight: 100;
+  line-height: 1.5;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: #2C3A47;
+}
+
+.main-content .service-details .box span {
+  display: inline-block;
+  margin: 2rem 0;
+}
+
+.main-content .service-details .box span a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #3B3B98;
+  font-size: 0.8rem;
+  font-weight: 400;
+  -webkit-transition: letter-spacing .2s ease-in-out;
+  transition: letter-spacing .2s ease-in-out;
+}
+
+.main-content .service-details .box span a:hover {
+  letter-spacing: 1px;
+}
+
+.main-content .service-details .box-1 {
+  margin-right: 2px;
+}
+
+.main-content .service-details .box-2 {
+  margin-right: 2px;
+}
+
+.main-content .service-details .box-3 {
+  margin-right: 2px;
+}
+
+.sale-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+}
+
+.sale-section .price-timing {
+  width: 50%;
+  text-align: center;
+  padding: 3rem;
+}
+
+.sale-section .price-timing h4.offer-slogan {
+  color: #2C3A47;
+  margin: 2rem auto;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.sale-section .price-timing h2.offer-heading {
+  text-transform: uppercase;
+  color: #34495e;
+  font-size: 1.3rem;
+  margin: 2rem auto;
+}
+
+.sale-section .price-timing p {
+  font-size: .8rem;
+  letter-spacing: 1px;
+  line-height: 1.8;
+  text-align: justify;
+  color: #2C3A47;
+  margin: 2rem auto;
+}
+
+.sale-section .price-timing div.pricing {
+  margin: 2rem auto;
+}
+
+.sale-section .price-timing div.pricing span.sale-price {
+  font-size: 1.5rem;
+  color: #34495e;
+  display: inline-block;
+  font-weight: 700;
+  margin-right: .5rem;
+}
+
+.sale-section .price-timing div.pricing span.old-price {
+  margin-right: .5rem;
+  font-weight: 400;
+  margin-left: .5rem;
+  font-size: 1.1rem;
+  display: inline-block;
+  color: #2C3A47;
+  text-decoration: line-through;
+}
+
+.sale-section .price-timing div.sale-timing {
+  margin: 2rem auto;
+}
+
+.sale-section .price-timing div.sale-timing .whiteBg {
+  border-radius: 5px;
+  display: inline-block;
+  background: #fff;
+  padding: 1.5rem .5rem;
+  font-weight: 700;
+}
+
+.sale-section .price-timing button {
+  border-radius: 20px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  width: 7rem;
+  height: 2.5rem;
+  background: #34495e;
+  color: #fff;
+}
+
+.sale-section .item-image {
+  width: 50%;
+  height: 100%;
+  background-image: url("../../images/1370536833.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=main.css.map */
