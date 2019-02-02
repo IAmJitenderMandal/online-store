@@ -1,0 +1,18 @@
+#gallery_section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 250px 250px 250px;
+      grid-template-rows: 250px 250px 250px;
+}
+
+#gallery_section .gallery-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#gallery_section .gallery-row .gallery-img {
+  border: 1px solid slateblue;
+}
+/*# sourceMappingURL=gallery-section.css.map */

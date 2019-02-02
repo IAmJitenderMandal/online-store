@@ -1,0 +1,73 @@
+.main-content {
+    
+    #service-details {
+        display: grid;
+        grid-template-columns: 5fr 5fr 5fr 5fr;
+        justify-content: space-evenly;
+        width: 100%;
+        background-color: $grayColor;
+
+        .box {
+            text-align: center;
+            background-color: $whiteColor;
+            padding: 2.5rem 2rem;
+
+            .box-icon {
+                font-size: 2rem;
+                font-weight: 700;
+                margin: 0 2rem;
+                color: $fontColor;
+            }
+
+            .box-heading {
+                font-size: 1.2rem;
+                margin: 2rem 2rem;
+                color: $fontColor;
+            }
+
+            p {
+                font-weight: 100;
+                line-height: 1.5;
+                font-size: 0.8rem;
+                letter-spacing: 1px;
+                word-spacing: 2px;
+                color: $darkGray;
+            }
+
+            span {
+                display: inline-block;
+                margin: 2rem 0;
+
+                a {
+                    background: $darkGray;
+                    border-radius: 5px;
+                    color: white;
+                    padding: 10px 15px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 0.8rem;
+                    font-weight: 400;
+                    transition: letter-spacing .2s ease-in-out;
+                }
+
+                a:hover {
+                    letter-spacing: 1px;
+                }
+
+            }
+
+        }
+
+        .box-1 {
+            margin-right: 2px;
+        }
+
+        .box-2 {
+            margin-right: 2px;
+        }
+
+        .box-3 {
+            margin-right: 2px;
+        }
+    }
+}

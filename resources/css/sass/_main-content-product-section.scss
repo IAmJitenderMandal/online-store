@@ -1,0 +1,153 @@
+#product-section {
+    display: grid;
+    grid-template-rows: 250px 250px 250px;
+
+    .product-row {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        background: $grayColor;
+
+        .item-box {
+            width: (1000 / 4) * 1 + px;
+            background: white;
+            margin-left: 1px;
+            height: 250px;
+
+            .item-img {
+                img {
+                    min-width: 150px;
+                    width: 150px;
+                }
+            }
+
+            .item-name {
+                font-weight: 700;
+                margin: 10px 0;
+            }
+
+            .item-price {
+                margin: 10px 0;
+            }
+
+            .price {
+                font-weight: 500;
+                margin: 10px 0;
+            }
+
+            a {
+                text-decoration: none;
+                display: inline-block;
+                background: $darkGray;
+                border-radius: 5px;
+                color: white;
+                width: 5rem;
+                padding: 9px 8px;
+            }
+        }
+    }
+
+    .advertise-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-template-rows: 250px;
+
+        .item-box {
+            height: 250px;
+
+            img {
+                width: 50%;
+            }
+        }
+
+        .item-box:first-child {
+            padding: 50px 25px;
+            background: $darkGray;
+
+            h3 {
+                color: white;
+                text-transform: uppercase;
+                font-size: 1.5rem;
+            }
+
+            h5 {
+                margin-top: 15px;
+                font-size: .8rem;
+                color: white;
+                letter-spacing: 3px;
+                line-height: 1.4;
+            }
+
+            a {
+                text-decoration: none;
+                display: inline-block;
+                background: $linkBg;
+                border-radius: 15px;
+                color: white;
+                width: 6rem;
+                padding: 9px 8px;
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+
+        .item-box:nth-child(2) {
+            text-align: center;
+            background: white;
+            padding: 25px 20px;
+
+            .item-img {
+                img {
+                    width: 80%;
+                }
+            }
+
+            .item-name {
+                font-weight: 700;
+                margin: 15px 0;
+            }
+
+            a {
+                text-decoration: none;
+                display: inline-block;
+                background: $linkBg;
+                border-radius: 15px;
+                color: white;
+                width: 6rem;
+                padding: 9px 8px;
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+
+        .sign-up-banner {
+            background: url("https://media.istockphoto.com/photos/silhouette-of-a-strong-fighter-picture-id479009174?k=6&m=479009174&s=612x612&w=0&h=2fDmo73AbLvqb4m4LUxOuALHk58AE-_yycct877lI-s=");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 25px;
+
+            h4 {
+                font-size: 2.5rem;
+                color: white;
+                text-transform: uppercase;
+                font-weight: 900;
+                font-style: italic;
+
+            }
+
+            a {
+                text-decoration: none;
+                display: inline-block;
+                background: $linkBg;
+                border-radius: 15px;
+                color: white;
+                width: 6rem;
+                padding: 9px 8px;
+                text-align: center;
+                margin-top: 25px;
+            }
+
+        }
+    }
+}
