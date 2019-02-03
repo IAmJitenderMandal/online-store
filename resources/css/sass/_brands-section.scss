@@ -1,0 +1,17 @@
+.main-content #brand_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(auto, 180px) minmax(auto, 180px);
+
+    .brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $grayColor;
+
+        img {
+            width: 70%;
+            display: inline-block;
+        }
+    }
+}
