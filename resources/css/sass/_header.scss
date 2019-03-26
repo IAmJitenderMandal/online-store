@@ -1,23 +1,45 @@
 .header {
     background-image: url("../../images/runner-bg.jpg");
     background-size: cover;
+    background-position: center right;
     height: 100vh;
     position: relative;
 
+    i.ion-md-menu {
+        display: none;
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+    }
+
     .logo-nav-icons {
         display: grid;
-        grid-template-columns: 2fr 10fr 3fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: minmax(3.5rem, auto);
+        padding: 0 2rem;
         background: $navBgColor;
         align-items: center;
+        justify-content: center;
 
         .logo {
-            color: $secondColor;
+            font-size: 2rem;
+            width: 16rem;
+            font-weight: 800;
+            color: #ecf0f1;
             text-align: center;
+            text-transform: uppercase;
         }
 
-        nav {
+        nav.navigation {
+            height: 3rem;
+
             ul {
+                margin-left: 1rem;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                height: 100%;
+
                 li {
                     display: inline-block;
                     margin: 0 0.5rem;
@@ -33,24 +55,41 @@
             }
         }
 
-        .icons {
-            text-align: center;
-            width: auto;
-            // border: 1px solid gray;
+        nav.mob-navigation {
+            display: none;
+            position: absolute;
+            background: black;
+            width: 50%;
             height: 100%;
-            display: flex;
-            align-items: center;
-            
-            li {
-                display: inline-block;
-                margin: 0 0.5rem;
+            top: 3.5rem;
+            left: 0;
+            width: 50%;
+            height: 100vh;
+            z-index: 10;
+            transform: translate3d(-100%, 0, 0);
+            transition: all .4s ease-in-out;
+            -webkit-box-shadow: 2px 0px 78px -15px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 2px 0px 78px -15px rgba(0, 0, 0, 0.75);
+            box-shadow: 2px 0px 78px -15px rgba(0, 0, 0, 0.75);
 
-                i {
-                    color: $whiteColor;
-                    font-size: 1.5rem;
+            
+
+            ul li {
+                margin: 2rem 2rem;
+
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: #ecf0f1;
                 }
             }
+
         }
+
+        nav.mob-navigation.active {
+            transform: translate3d(0, 0, 0);
+        }
+
     }
 
     .main-heading {
@@ -86,9 +125,65 @@
             font-size: 1rem;
             border-radius: 20px;
             color: $whiteColor;
-            
         }
     }
 
+}
 
+
+/*mobile*/
+
+@media only screen and (max-width: 768px) {
+
+    nav.navigation {
+        display: none;
+    }
+
+    .header i.ion-md-menu {
+        display: block;
+        color: white;
+        font-size: 2rem;
+        text-align: right;
+    }
+
+
+    .header .logo-nav-icons nav.mob-navigation {
+        display: block;
+    }
+
+    .header .main-heading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-70%, -30%);
+        transform: translate(-50%, -32%);
+        text-align: center;
+    }
+
+    .header .main-heading .heading-primary {
+        font-size: 5rem;
+        color: #fff;
+        line-height: 5rem;
+    }
+
+    .header .main-heading .heading-secondary {
+        font-size: 1rem;
+        line-height: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        color: #fff;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        background-color: #9acd32;
+    }
+
+}
+/*phone*/
+@media only screen and (max-width: 768px) { 
+    
+}
+
+/*tablet*/
+@media only screen and (max-width: 900px) { 
+    
 }

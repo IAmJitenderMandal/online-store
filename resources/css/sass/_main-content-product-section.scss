@@ -9,12 +9,13 @@
         background: $grayColor;
 
         .item-box {
-            width: (1000 / 4) * 1 - 1 + px;
+            width: (1050 / 4) * 1 - 1 + px;
             background: white;
             margin-left: 1px;
             height: 250px;
 
             .item-img {
+                height: 8rem;
                 img {
                     min-width: 150px;
                     width: 150px;
@@ -150,4 +151,108 @@
 
         }
     }
+}
+
+/*phone*/
+
+@media only screen and (max-width: 768px) { 
+    .product-row {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        background: $grayColor;
+
+        .item-box {
+            width: (80% / 4);
+            background: white;
+            margin-left: 1px;
+            height: 250px;
+
+            .item-img {
+                height: 8rem;
+                img {
+                    min-width: 70%;
+                    width: 80%;
+                }
+            }
+
+            .item-name {
+                font-weight: 700;
+                margin: 10px 0;
+            }
+
+            .item-price {
+                margin: 10px 0;
+            }
+
+            .price {
+                font-weight: 500;
+                margin: 10px 0;
+            }
+
+            a {
+                text-decoration: none;
+                display: inline-block;
+                background: $darkGray;
+                border-radius: 5px;
+                color: white;
+                width: 5rem;
+                padding: 9px 8px;
+            }
+        }
+    }
+}   
+
+/*tablet*/
+
+@media only screen and (max-width: 1050px) { 
+
+    .product-row {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        background: $grayColor;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+
+        .item-box {
+            width: (1050 / 4) * 1 - 1 + px;
+            background: white;
+            margin-left: 1px;
+            height: 250px;
+
+            .item-img {
+                height: 8rem;
+                img {
+                    min-width: 150px;
+                    width: 150px;
+                }
+            }
+
+            .item-name {
+                font-weight: 700;
+                margin: 10px 0;
+            }
+
+            .item-price {
+                margin: 10px 0;
+            }
+
+            .price {
+                font-weight: 500;
+                margin: 10px 0;
+            }
+
+            a {
+                text-decoration: none;
+                display: inline-block;
+                background: $darkGray;
+                border-radius: 5px;
+                color: white;
+                width: 5rem;
+                padding: 9px 8px;
+            }
+        }
+    }
+
 }

@@ -86,6 +86,7 @@
                     height: 2.5rem;
                     background: $fontColor;
                     color: $whiteColor;
+                    font-size: 1rem;
                 }
             }
         }
@@ -99,4 +100,124 @@
             background-repeat: no-repeat;
         }
     }
+}
+/*phone*/
+
+@media only screen and (max-width: 768px) { 
+    .main-content {
+        #sale-section {
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            background-color: #e6e6ff;
+            background-image: linear-gradient(
+            to right bottom, rgba(#e6e6ff, 0.8), rgba(#e6e6ff, 0.8)),
+            url("../../images/1370536833.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+
+            .price-timing {
+                width: 75%;
+                text-align: center;
+                
+                .content-container {
+                    width: 85%;
+                    text-align: center;
+                    margin: 0 auto;
+    
+                    h4.offer-slogan {
+                        color: $darkGray;
+                        margin: 2rem auto;
+                        text-transform: uppercase;
+                        font-weight: 400;
+                        font-size: 1rem;
+                    }
+    
+                    h2.offer-heading {
+                        text-transform: uppercase;
+                        color: $fontColor;
+                        font-size: 1.3rem;
+                        margin: 2rem auto;
+    
+                    }
+    
+                    p {
+                        font-size: 1rem;
+                        letter-spacing: 1px;
+                        line-height: 1.8;
+                        text-align: justify;
+                        color: $darkGray;
+                        margin: 2rem auto;
+                    }
+    
+    
+                    div.pricing {
+                        margin: 2rem auto;
+    
+                        span.sale-price {
+                            font-size: 1.5rem;
+                            color: $fontColor;
+                            display: inline-block;
+                            font-weight: 900;
+                            margin-right: .5rem;
+                        }
+    
+                        span.old-price {
+                            margin-right: .5rem;
+                            font-weight: 700;
+                            margin-left: .5rem;
+                            font-size: 1.1rem;
+                            display: inline-block;
+                            color: $darkGray;
+                            text-decoration: line-through;
+                        }
+    
+                    }
+    
+                    div.sale-timing {
+                        margin: 2rem auto;
+    
+                        .whiteBg {
+                            border-radius: 5px;
+                            display: inline-block;
+                            background: $whiteColor;
+                            padding: 1.5rem .5rem;
+                            font-weight: 700;
+                            margin: 5px;
+                        }
+    
+                    }
+    
+                    button {
+                        border-radius: 20px;
+                        box-shadow: none;
+                        border: none;
+                        width: 7rem;
+                        height: 2.5rem;
+                        background: $fontColor;
+                        color: $whiteColor;
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+    
+            .item-image {
+                display: none;
+                // width: 50%;
+                // height: 100%;
+                // background-image: url("../../images/1370536833.png");
+                // background-position: center;
+                // background-size: cover;
+                // background-repeat: no-repeat;
+            }
+        }
+    }
+}   
+
+/*tablet*/
+@media only screen and (max-width: 900px) { 
+    
 }

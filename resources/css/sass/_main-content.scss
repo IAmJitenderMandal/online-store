@@ -4,12 +4,14 @@
     // top: 116%;
     // transform: translate(-50%, -50%);
  
-    width: 1000px;
-    max-width: 1150px;
+    width: 100%;
+    max-width: 1050px;
     // overflow: hidden;
     margin: 0 auto;
     border: 1px solid #adadad;
+    border-top: none;
     -webkit-box-shadow: 0px 10px 56px -4px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 10px 56px -4px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 10px 56px -4px rgba(0, 0, 0, 0.75);
+
 }
